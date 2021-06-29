@@ -1,0 +1,41 @@
+* {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* div principale de formuler */
+.formuler {
+  width: 100%;
+  background-color: cadetblue;
+}
+
+/* balis formuler */
+.formuler form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* div pour titr et saus titre */
+.titre {
+  width: 50%;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+/* balis input qui contier les list et dans list on a les labels et inputes */
+.formuler .inputFormuer {
+  background-color: chartreuse;
+  width: 75%;
+}
+
+/* balis li pour formuler */
+.inputFormuer li {
+  list-style: none;
+}
