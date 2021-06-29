@@ -4,7 +4,8 @@ body {
     height: 100%;
     background-image: url('img/background/towel.png');
 }
-
+/* barre de navigation en flex
+contient h1 et menu burger */
 nav {
     display: flex;
     align-items: center;
@@ -14,27 +15,41 @@ nav {
     background: #333333;
     border-bottom: 2px solid white;
 }
-
+/* "Jean Jacques */
 nav h1 {
     font-family: 'Abril Fatface', cursive;
     font-weight: normal;
     color: white;
 }
-
+/* menu burger */
 nav img {
     height: 50%;
     color: white;
 }
 
 .citation {
-    margin: 70px auto;
+    margin: 50px auto;
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     color: white;
     text-align: center;
 }
+/* quotes avant et apres la citation "pseudoelement" */
+.citation::before {
+    content: open-quote;
+    font-size: 40px;
+    font-weight: 900;
+}
+.citation::after {
+    content: close-quote;
+    font-size: 40px;
+    font-weight: 900;
+}
+/* set la font pour le main de la page */
 main {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
     width: 100%;
 }
 /* slider en position relative pour que les images en absolute
@@ -44,16 +59,19 @@ se placent par rapport à lui */
     position: relative;
     width: 100%;
     height: 250px;
-    border: 1px solid black;
 }
+/* on met la box contenant les images en pos absolute pour qu'elle
+ne prenne pas de place dans le flux de la page. */
 .slideimg {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
+/* on donne un index negatif à la boite pour qu'elle se mette en
+dessous par default */
     z-index: -1;
 }
-
+/* image couvrant la taille de la box qui la contient (slideimg) */
 .slider img {
     width: 100%;
     height: 100%;
@@ -81,9 +99,18 @@ se placent par rapport à lui */
 .nxt {
     right: 0;
 }
-
+/* quand radioN est check, attrape l'imgN correspondante
+et modifie son index Z (profondeur) pour qu'il apparaisse au dessus */
 #i1:checked ~ #img1,
 #i2:checked ~ #img2,
 #i3:checked ~ #img3 {
     z-index: 1;
+}
+
+.presentation {
+    margin: 30px auto;
+    padding: 20px;
+    background: #333333;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
 }
