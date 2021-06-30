@@ -118,9 +118,34 @@ et modifie son index Z (profondeur) pour qu'il apparaisse au dessus */
 }
 
 .presta {
-    margin: 120px auto 100px;
+    margin: 120px auto 0px;
     padding: 20px 40px;
     background: #333333;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
+}
+
+.categories {
+    width: 100%;
+}
+
+.categories section {
+    padding-top: 60px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+/* images en display block pour qu'elles rentrent bien 
+pile dans la box */
+.categories img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.paysages {
+    background : #333333;
+    border: 2px solid white;
 }
