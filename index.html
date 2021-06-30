@@ -20,7 +20,7 @@
       <form action="server url">
         <!-- cette balis contien titre et saus titre -->
         <div class="titre">
-          <h1>CONTACTE</h1>
+          <h1>CONTACT</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error
             commodi minus voluptates vel aperiam dicta eaque autem ex eligendi
@@ -34,37 +34,43 @@
           <ol>
             <li>
               <!-- label input nom -->
-              <label for="Nom">NOM*</label> <br />
-              <input type="text" placeholder="Nom" size="100%" />
+              <label for="Nom">NOM <span class="required">*</span></label>
+              <br />
+              <input type="text" placeholder="Nom" size="120%" />
             </li>
             <li>
               <!-- label input téléphont -->
-              <label for="TEL">TEL*</label> <br />
-              <input type="text" placeholder="0111111111" />
+              <label for="TEL">TEL <span class="required">*</span></label
+              ><br />
+              <input type="text" placeholder="0111111111" size="120%" />
             </li>
             <li>
               <!-- label input email -->
-              <label for="Eamil">E-mail*</label> <br />
+              <label for="Eamil">E-mail <span class="required">*</span></label>
+              <br />
               <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="contact@gmail.com"
+                size="120%"
               />
             </li>
             <li>
               <!-- balise commenter -->
-              <label for="sujet">Sujet*</label> <br />
+              <label for="sujet">Sujet <span class="required">*</span></label>
+              <br />
               <textarea
                 name="commenter"
                 id="commenter"
-                cols="30"
-                rows="10"
+                cols="92%"
+                rows="6"
+                placeholder="Entrez votre commentaire..."
               ></textarea>
             </li>
-            <!-- button envoyer -->
-            <li><button class="button">ENVOYER</button></li>
           </ol>
+          <!-- button envoyer -->
+          <button class="button">ENVOYER</button>
         </div>
       </form>
     </div>

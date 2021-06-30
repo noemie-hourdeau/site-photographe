@@ -5,14 +5,33 @@
   padding: 0;
 }
 
+/* -------------------------------------------- font dans formulair */
+/* style font pour premier titre dans formuler */
+.titre h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* style font pour saus titre dans formuler */
+.titre p {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* style font pour label dans formuler */
+.inputFormuer ol li label {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* -------------------------------------------- style globale formulair */
 /* div principale de formuler */
 .formuler {
   width: 100%;
-  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
 }
 
 /* balis formuler */
 .formuler form {
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,21 +40,56 @@
 
 /* div pour titr et saus titre */
 .titre {
-  width: 50%;
-  background-color: bisque;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: end;
+  align-items: center;
 }
 
 /* balis input qui contier les list et dans list on a les labels et inputes */
 .formuler .inputFormuer {
-  background-color: chartreuse;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 75%;
+}
+/* input style formulair */
+input {
+  border: solid 1px gray;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 1px #8585851a, 0 0 0 1px #b4b4b4,
+    0.1em 0.1em 1em #cacaca4d;
 }
 
 /* balis li pour formuler */
 .inputFormuer li {
   list-style: none;
+  margin: 10px;
+}
+
+/* etoil dans label qui est dans formulair */
+ol .required {
+  color: red;
+}
+
+/* balise commenter dans formulair */
+.inputFormuer ol li textarea {
+  padding: 5px;
+
+  box-shadow: inset 0 1px 1px #0000001a, 0 0 0 1px #b4b4b4,
+    0.1em 0.1em 1em #9c9c9c4d;
+  width: 730px;
+}
+
+/* style button qui est dans formulair */
+
+.button {
+  padding: 10px;
+  width: 746px;
+  max-width: 746px;
+  font-family: "Montserrat", sans-serif;
 }
