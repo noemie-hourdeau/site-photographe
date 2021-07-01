@@ -77,6 +77,11 @@ img { display: block; }
  width: 100%;
 }
 
+.slideimg label {
+  width: 50px;
+  top: 40%;
+}
+
 .slideimg p {
     position: absolute;
     bottom: 0;
@@ -484,6 +489,6 @@ ol {
   .slider {
     width: 100%;
     height: 50%;
-  }
+  } 
 }
 
