@@ -1,334 +1,158 @@
-* {
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
 body {
-  background-image: url("./img/background/towel.png");
+  margin: 0;
+  width: 100%;
+  height: auto;
+  background-image: url("img/background/towel.png");
   background-size: 100%;
 }
-
-/*------------------------------------------------------ rouhullah */
-/* -------------------------------------------- font dans formulair */
-/* style font pour premier titre dans formuler */
-.titre h1 {
-  font-family: "Montserrat", sans-serif;
-}
-
-/* style font pour saus titre dans formuler */
-.titre p {
-  font-family: "Montserrat", sans-serif;
-  padding-top: 5px;
-}
-
-/* style font pour label dans formuler */
-.inputFormulair ol li label {
-  font-family: "Montserrat", sans-serif;
-}
-
-/* -------------------------------------------- style globale formulair */
-/* div principale de formuler */
-.formuler {
-  width: 100%;
+/* barre de navigation en flex
+contient h1 et menu burger */
+nav {
   display: flex;
-  justify-content: center;
-}
-
-/* balis formuler */
-.formuler form {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-
-/* div pour titr et saus titre */
-.titre {
-  width: 56%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  color: aliceblue;
-}
-
-/* balis input qui contier les list et dans list on a les labels et inputes */
-.formuler .inputFormulair {
-  margin-top: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  color: aliceblue;
-}
-
-/* taille liste dans formulair */
-.formuler .inputFormulair ol {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-/* input style formulair */
-.inputFormulair ol li input {
-  border: solid 1px #dbdbdb;
-  padding: 5px;
-  width: 90%;
-  max-width: 90%;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
-    0.1em 0.1em 1em #cacaca4d;
-}
-
-/* balis li pour formuler */
-.inputFormulair li {
-  list-style: none;
-  margin-top: 10px;
-}
-
-/* etoil dans label qui est dans formulair */
-ol .required {
-  color: red;
-}
-
-/* balise commenter dans formulair */
-.inputFormulair ol li textarea {
-  padding: 5px;
-  border: solid 1px #c4c4c4;
-  box-shadow: inset 0 1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
-    0.1em 0.1em 1em #cacaca4d;
-  width: 90%;
-}
-
-/* style button qui est dans formulair */
-
-.button {
-  border: solid 1px #707070;
-  border-radius: 5px;
+  justify-content: space-between;
+  height: 40px;
   padding: 10px;
-  width: 95%;
-  max-width: 92%;
-  margin-right: -1%;
+  background: #333333;
+  border-bottom: 2px solid white;
+}
+/* "Jean Jacques */
+nav h1 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: normal;
+  color: white;
+}
+/* menu burger */
+nav img {
+  height: 50%;
+  color: white;
+}
+
+.citation {
+  margin: 40px auto;
+  font-size: 1.5em;
   font-family: "Montserrat", sans-serif;
-  color: aliceblue;
-  background-color: #4a534c;
+  font-style: italic;
+  color: white;
+  text-align: center;
 }
 
-::placeholder {
-  color: #8f8f8f;
+/* set la font pour le main de la page */
+main {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  width: 100%;
+}
+.slider input {
+  display: none;
+}
+.cadre {
+  width: 50%;
+  height: 500px;
+  overflow: hidden;
+  border: 2px solid black;
+  margin: auto;
 }
 
-/* ----------------------------------------rouhullah */
-/* version iPad */
-@media screen and (max-width: 768px) and (min-width: 414px) {
-  /* div principale de formuler */
-  .formuler {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  /* balis formuler */
-  .formuler form {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* div pour titr et saus titre */
-  .titre {
-    width: 80%;
-    padding-top: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    color: aliceblue;
-  }
-
-  /* balis input qui contier les list et dans list on a les labels et inputes */
-  .formuler .inputFormulair {
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    color: aliceblue;
-  }
-
-  /* taille liste dans formulair */
-  .formuler .inputFormulair ol {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  /* input style formulair */
-  .inputFormulair ol li input {
-    border: solid 1px #dbdbdb;
-    width: 95%;
-    max-width: 95%;
-    padding: 5px;
-    border-radius: 3px;
-    box-shadow: inset 0 -1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
-      0.1em 0.1em 1em #cacaca4d;
-  }
-
-  /* balis li pour formuler */
-  .inputFormulair li {
-    list-style: none;
-    margin: 10px;
-  }
-
-  /* etoil dans label qui est dans formulair */
-  ol .required {
-    color: red;
-  }
-
-  /* balise commenter dans formulair */
-  .inputFormulair ol li textarea {
-    padding: 5px;
-    border: solid 1px #c4c4c4;
-    box-shadow: inset 0 1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
-      0.1em 0.1em 1em #cacaca4d;
-    width: 95%;
-    max-width: 95%;
-  }
-
-  /* style button qui est dans formulair */
-
-  .button {
-    border: solid 1px #707070;
-    border-radius: 5px;
-    padding: 10px;
-    width: 100%;
-    max-width: 97%;
-    font-family: "Montserrat", sans-serif;
-    color: aliceblue;
-    background-color: #4a534c;
-  }
-
-  ::placeholder {
-    color: #8f8f8f;
-  }
+.container {
+  width: 300%;
+  height: 100%;
+  display: flex;
+  transition-duration: 1000ms;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
 }
 
-/* version téléphon */
-@media screen and (max-width: 413px) {
-  /* div principale de formuler */
-  .formuler {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  /* balis formuler */
-  .formuler form {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  /* div pour titr et saus titre */
-  .titre {
-    width: 90%;
-    padding-top: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    color: aliceblue;
-  }
-  /* balis input qui contier les list et dans list on a les labels et inputes */
-  .formuler .inputFormulair {
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    color: aliceblue;
-  }
-
-  /* input style formulair */
-  .inputFormulair ol li input {
-    border: solid 1px #dbdbdb;
-    width: 95%;
-    max-width: 95%;
-    padding: 5px;
-    border-radius: 3px;
-    box-shadow: inset 0 -1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
-      0.1em 0.1em 1em #cacaca4d;
-  }
-
-  .formuler .inputFormulair ol {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* balis input qui contier les list et dans list on a les labels et inputes */
-  .formuler .inputFormulair {
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    color: aliceblue;
-  }
-
-  /* balis li pour formuler */
-  .inputFormulair li {
-    list-style: none;
-  }
-
-  /* balise commenter dans formulair */
-  .inputFormulair ol li textarea {
-    padding: 5px;
-    border: solid 1px #c4c4c4;
-    box-shadow: inset 0 1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
-      0.1em 0.1em 1em #cacaca4d;
-    width: 95%;
-    max-width: 95%;
-  }
-
-  /* style button qui est dans formulair */
-
-  .button {
-    border: solid 1px #707070;
-    border-radius: 5px;
-    padding: 10px;
-    width: 100%;
-    max-width: 97%;
-    font-family: "Montserrat", sans-serif;
-    color: aliceblue;
-    background-color: #4a534c;
-  }
-}
-* {
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
-body {
-  background-image: url("./img/background/towel.png");
-  background-size: 100%;
+img {
+  display: block;
 }
 
-<<<<<<< HEAD
-=======
-.architecture {
-  background : #333333;
+.slideimg {
+  position: relative;
+  width: 100%;
+}
+
+.slideimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.slideimg label {
+  background: rgba(185, 185, 185, 0.5);
+}
+
+.pre {
+  z-index: 2;
+  position: absolute;
+  top: 38%;
+  left: 0;
+  transform: scale(0.6);
+}
+.nxt {
+  z-index: 2;
+  position: absolute;
+  top: 38%;
+  right: 0;
+  transform: scale(0.6);
+}
+
+#i1:checked ~ .cadre .container {
+  transform: translate(0);
+}
+#i2:checked ~ .cadre .container {
+  transform: translate(-33.3333333333333%);
+}
+#i3:checked ~ .cadre .container {
+  transform: translate(-66.666666666666%);
+}
+
+.presentation {
+  margin: 30px auto;
+  padding: 20px 40px;
+  background: #333333;
+}
+
+.presta {
+  margin: 120px auto 0px;
+  padding: 20px 40px;
+  background: #333333;
   border-top: 2px solid white;
-  border-bottom: 2px solid white; 
+  border-bottom: 2px solid white;
 }
 
->>>>>>> a8ed69d32776c30754a0029f597e35bef319dae1
-/*------------------------------------------------------ rouhullah */
+.categories {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.categories section {
+  padding-top: 60px;
+}
+
+.categories h2 {
+  text-align: center;
+}
+
+/* images en display block pour qu'elles rentrent bien 
+pile dans la box */
+.categories img {
+  width: 70%;
+  margin: 0 auto 100px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid white;
+}
+
+.architecture {
+  background: #333333;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+/*------------------------------------------------------ rouhullah formilair */
 /* -------------------------------------------- font dans formulair */
 /* style font pour premier titre dans formuler */
 .titre h1 {
@@ -394,8 +218,8 @@ body {
 .inputFormulair ol li input {
   border: solid 1px #dbdbdb;
   padding: 5px;
-  width: 90%;
-  max-width: 90%;
+  width: 98%;
+  max-width: 98%;
   border-radius: 3px;
   box-shadow: inset 0 -1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
     0.1em 0.1em 1em #cacaca4d;
@@ -405,6 +229,7 @@ body {
 .inputFormulair li {
   list-style: none;
   margin-top: 10px;
+  width: 100%;
 }
 
 /* etoil dans label qui est dans formulair */
@@ -418,7 +243,7 @@ ol .required {
   border: solid 1px #c4c4c4;
   box-shadow: inset 0 1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
     0.1em 0.1em 1em #cacaca4d;
-  width: 90%;
+  width: 98%;
 }
 
 /* style button qui est dans formulair */
@@ -427,8 +252,8 @@ ol .required {
   border: solid 1px #707070;
   border-radius: 5px;
   padding: 10px;
-  width: 95%;
-  max-width: 92%;
+  width: 99%;
+  max-width: 99%;
   margin-right: -1%;
   font-family: "Montserrat", sans-serif;
   color: aliceblue;
@@ -489,8 +314,8 @@ ol .required {
   /* input style formulair */
   .inputFormulair ol li input {
     border: solid 1px #dbdbdb;
-    width: 95%;
-    max-width: 95%;
+    width: 98%;
+    max-width: 98%;
     padding: 5px;
     border-radius: 3px;
     box-shadow: inset 0 -1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
@@ -500,7 +325,6 @@ ol .required {
   /* balis li pour formuler */
   .inputFormulair li {
     list-style: none;
-    margin: 10px;
   }
 
   /* etoil dans label qui est dans formulair */
@@ -514,8 +338,8 @@ ol .required {
     border: solid 1px #c4c4c4;
     box-shadow: inset 0 1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
       0.1em 0.1em 1em #cacaca4d;
-    width: 95%;
-    max-width: 95%;
+    width: 98%;
+    max-width: 98%;
   }
 
   /* style button qui est dans formulair */
@@ -525,7 +349,7 @@ ol .required {
     border-radius: 5px;
     padding: 10px;
     width: 100%;
-    max-width: 97%;
+    max-width: 99%;
     font-family: "Montserrat", sans-serif;
     color: aliceblue;
     background-color: #4a534c;
@@ -536,15 +360,6 @@ ol .required {
   }
 }
 
-<<<<<<< HEAD
-=======
-.formuler .inputFormuer,
-.inputFormuer ol li input,
-.inputFormuer ol li textarea,
-{
-  width: 100%;
-=======
->>>>>>> a8ed69d32776c30754a0029f597e35bef319dae1
 /* version téléphon */
 @media screen and (max-width: 413px) {
   /* div principale de formuler */
@@ -635,11 +450,7 @@ ol .required {
     color: aliceblue;
     background-color: #4a534c;
   }
-<<<<<<< HEAD
-=======
 }
 ol {
   padding: 0;
->>>>>>> a8ed69d32776c30754a0029f597e35bef319dae1
 }
-
