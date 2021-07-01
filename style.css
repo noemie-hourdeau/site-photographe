@@ -319,6 +319,15 @@ body {
   background-size: 100%;
 }
 
+<<<<<<< HEAD
+=======
+.architecture {
+  background : #333333;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; 
+}
+
+>>>>>>> a8ed69d32776c30754a0029f597e35bef319dae1
 /*------------------------------------------------------ rouhullah */
 /* -------------------------------------------- font dans formulair */
 /* style font pour premier titre dans formuler */
@@ -527,6 +536,15 @@ ol .required {
   }
 }
 
+<<<<<<< HEAD
+=======
+.formuler .inputFormuer,
+.inputFormuer ol li input,
+.inputFormuer ol li textarea,
+{
+  width: 100%;
+=======
+>>>>>>> a8ed69d32776c30754a0029f597e35bef319dae1
 /* version téléphon */
 @media screen and (max-width: 413px) {
   /* div principale de formuler */
@@ -617,4 +635,11 @@ ol .required {
     color: aliceblue;
     background-color: #4a534c;
   }
+<<<<<<< HEAD
+=======
 }
+ol {
+  padding: 0;
+>>>>>>> a8ed69d32776c30754a0029f597e35bef319dae1
+}
+
