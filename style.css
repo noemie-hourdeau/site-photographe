@@ -151,6 +151,7 @@ img { display: block; }
 pile dans la box */
 .categories img {
   width: 70%;
+  height: 50%;
   margin: 0 auto 100px;
   object-fit: cover;
   display: block;
