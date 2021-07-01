@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        <!--Font H1-->
-        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-        <!--Font Paragraphes-->
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-        </style>
-</head>
-<body>
-   
-</body>
+      @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+    </style>
+  </head>
+  <body>
+    <!-- formuler avec un titre et saus titre avec 4 input pour information et 1 pour commenter -->
+    <div class="formuler">
+      <!-- cette balise contien touts les balis pour notre formuler -->
+      <form action="">
+        <!-- cette balis contien titre et saus titre -->
+        <div class="titre">
+          <h1>CONTACT</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error
+            commodi minus voluptates vel aperiam dicta eaque autem ex eligendi
+            repellendus, officiis deleniti. Suscipit, repellendus vero incidunt
+            eaque ratione nisi.
+          </p>
+        </div>
+
+        <!-- cette balis contier les liste (labels et input) -->
+        <div class="inputFormuer">
+          <ol>
+            <li>
+              <!-- label input nom -->
+              <label for="Nom">NOM <span class="required">*</span></label>
+              <br />
+              <input type="text" placeholder="Nom" />
+            </li>
+            <li>
+              <!-- label input téléphont -->
+              <label for="TEL">TEL <span class="required">*</span></label
+              ><br />
+              <input type="text" placeholder="0111111111" />
+            </li>
+            <li>
+              <!-- label input email -->
+              <label for="Eamil">E-mail <span class="required">*</span></label>
+              <br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="contact@gmail.com"
+              />
+            </li>
+            <li>
+              <!-- balise commenter -->
+              <label for="sujet">Sujet <span class="required">*</span></label>
+              <br />
+              <textarea
+                name="commenter"
+                id="commenter"
+                cols="92%"
+                rows="6"
+                placeholder="Entrez votre commentaire..."
+              ></textarea>
+            </li>
+          </ol>
+          <!-- button envoyer -->
+          <button class="button">ENVOYER</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
