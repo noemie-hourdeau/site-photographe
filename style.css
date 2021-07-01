@@ -359,10 +359,10 @@ ol .required {
 
 .formuler .inputFormuer,
 .inputFormuer ol li input,
-.inputFormuer ol li textarea,
-{
+.inputFormuer ol li textarea {
   width: 100%;
-=======
+}
+
 /* version téléphon */
 @media screen and (max-width: 413px) {
   /* div principale de formuler */
