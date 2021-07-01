@@ -3,6 +3,7 @@ body {
   width: 100%;
   height: auto;
   background-image: url('img/background/towel.png');
+  background-size: 100%;
 }
 /* barre de navigation en flex
 contient h1 et menu burger */
@@ -28,87 +29,81 @@ nav img {
 }
 
 .citation {
-  margin: 50px auto;
+  margin: 40px auto;
   font-size: 1.5em;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   color: white;
   text-align: center;
 }
-/* quotes avant et apres la citation "pseudo element" */
-.citation::before {
-  position: relative;
-  bottom: -10px;
-  content: open-quote;
-  font-size: 40px;
-  font-weight: 900;
-}
-.citation::after {
-  position: relative;
-  bottom: -10px;
-  content: close-quote;
-  font-size: 40px;
-  font-weight: 900;
-}
+
 /* set la font pour le main de la page */
 main {
   font-family: 'Montserrat', sans-serif;
   color: white;
   width: 100%;
 }
-/* slider en position relative pour que les images en absolute
-se placent par rapport à lui */
-.slider {
-  margin: auto;
-  position: relative;
-  width: 100%;
-  height: 250px;
+.slider input {
+  display: none;
 }
-/* on met la box contenant les images en pos absolute pour qu'elle
-ne prenne pas de place dans le flux de la page. */
-.slideimg {
-  position: absolute;
-  top: 0;
-  width: 100%;
+.cadre {
+ width: 50%;
+ height: 500px;
+ overflow: hidden;
+ border: 2px solid black;
+ margin: auto;
+}
+
+.container {
+  width: 300%;
   height: 100%;
-/* on donne un index negatif à la boite pour qu'elle se mette en
-dessous par default */
-  z-index: -1;
+ display: flex;
+ transition-duration: 1000ms;
+ transition-property: transform;
+ transition-timing-function: ease-in-out;
 }
-/* image couvrant la taille de la box qui la contient (slideimg) */
-.slider img {
+
+img { display: block; }
+
+.slideimg {
+ position: relative;
+ height: 100%;
+}
+
+.slideimg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-/* radio invisibles, juste là comme "conditions" */
-#i1, #i2, #i3 {
-  display: none;
-}
-/* Previous / Next Arrows */
-.pre, .nxt {
-  width: 10%;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  background: rgba(255,255,255, 0.3);
-  z-index: 5;
-  cursor: pointer;
-  transform: translate(0, -50%);
-}
-.pre {
-  left: 0;
+ z-index: 1;
 }
 
-.nxt {
-  right: 0;
+.slideimg label {
+  background: rgba(185, 185, 185, 0.5);
 }
-/* quand radioN est check, attrape l'imgN correspondante
-et modifie son index Z (profondeur) pour qu'il apparaisse au dessus */
-#i1:checked ~ #img1,
-#i2:checked ~ #img2,
-#i3:checked ~ #img3 {
-  z-index: 1;
+
+.pre {
+ z-index: 2;
+ position: absolute;
+ top: 38%;
+ left: 0;
+ transform: scale(0.6);
+}
+.nxt {
+ z-index: 2;
+ position: absolute;
+ top: 38%;
+ right: 0;
+ transform: scale(0.6);
+}
+
+#i1:checked ~ .cadre .container {
+ transform: translate(0);
+}
+#i2:checked ~ .cadre .container {
+ transform: translate(-33.3333333333333%);
+}
+#i3:checked ~ .cadre .container {
+ transform: translate(-66.666666666666%);
 }
 
 .presentation {
@@ -127,6 +122,8 @@ et modifie son index Z (profondeur) pour qu'il apparaisse au dessus */
 
 .categories {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .categories section {
@@ -140,14 +137,17 @@ et modifie son index Z (profondeur) pour qu'il apparaisse au dessus */
 /* images en display block pour qu'elles rentrent bien 
 pile dans la box */
 .categories img {
-  width: 100%;
+  width: 70%;
+  margin: 0 auto 100px;
   object-fit: cover;
   display: block;
+  border: 1px solid white;
 }
 
-.paysages {
+.architecture {
   background : #333333;
-  border: 2px solid white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; 
 }
 /* -------------------------------------------- font dans formulair */
 /* style font pour premier titre dans formuler */
@@ -304,7 +304,6 @@ ol .required {
   /* balis li pour formuler */
   .inputFormuer li {
     list-style: none;
-    margin: 10px;
   }
 
   /* etoil dans label qui est dans formulair */
@@ -351,7 +350,7 @@ ol {
 }
 
 /* version téléphon */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1000px) {
   /* div principale de formuler */
   .formuler .inputFormuer,
   .inputFormuer ol li input,
@@ -362,5 +361,23 @@ ol {
   ol {
     padding: 0;
   }
+  .cadre {
+    width: 100%;
+    height: 250px;
+  } 
 }
 
+@media screen and (min-width: 1000px) {
+  .categories {
+    flex-direction: row;
+  }
+  .architecture {
+    background: none;
+    border: none;
+  }
+  .formuler {
+    background : #333333;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white; 
+  }
+}
