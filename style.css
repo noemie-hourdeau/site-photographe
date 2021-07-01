@@ -9,6 +9,7 @@ body {
   background-size: 100%;
 }
 
+/*------------------------------------------------------ rouhullah */
 /* -------------------------------------------- font dans formulair */
 /* style font pour premier titre dans formuler */
 .titre h1 {
@@ -22,7 +23,7 @@ body {
 }
 
 /* style font pour label dans formuler */
-.inputFormuer ol li label {
+.inputFormulair ol li label {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -54,7 +55,7 @@ body {
 }
 
 /* balis input qui contier les list et dans list on a les labels et inputes */
-.formuler .inputFormuer {
+.formuler .inputFormulair {
   margin-top: 5px;
   display: flex;
   flex-direction: column;
@@ -64,7 +65,7 @@ body {
   color: aliceblue;
 }
 /* input style formulair */
-.inputFormuer ol li input {
+.inputFormulair ol li input {
   border: solid 1px #dbdbdb;
   padding: 5px;
   width: 730px;
@@ -75,7 +76,7 @@ body {
 }
 
 /* balis li pour formuler */
-.inputFormuer li {
+.inputFormulair li {
   list-style: none;
   margin: 10px;
 }
@@ -86,7 +87,7 @@ ol .required {
 }
 
 /* balise commenter dans formulair */
-.inputFormuer ol li textarea {
+.inputFormulair ol li textarea {
   padding: 5px;
   border: solid 1px #c4c4c4;
   box-shadow: inset 0 1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
@@ -101,7 +102,7 @@ ol .required {
   border-radius: 5px;
   padding: 10px;
   width: 746px;
-  max-width: 746px;
+  max-width: 739px;
   font-family: "Montserrat", sans-serif;
   color: aliceblue;
   background-color: #4a534c;
@@ -111,6 +112,7 @@ ol .required {
   color: #8f8f8f;
 }
 
+/* ----------------------------------------rouhullah */
 /* version iPad */
 @media screen and (max-width: 768px) {
   /* div principale de formuler */
@@ -141,7 +143,7 @@ ol .required {
   }
 
   /* balis input qui contier les list et dans list on a les labels et inputes */
-  .formuler .inputFormuer {
+  .formuler .inputFormulair {
     margin-top: 5px;
     display: flex;
     flex-direction: column;
@@ -151,7 +153,7 @@ ol .required {
     color: aliceblue;
   }
   /* input style formulair */
-  .inputFormuer ol li input {
+  .inputFormulair ol li input {
     border: solid 1px #dbdbdb;
     width: 613px;
     max-width: 613px;
@@ -162,7 +164,7 @@ ol .required {
   }
 
   /* balis li pour formuler */
-  .inputFormuer li {
+  .inputFormulair li {
     list-style: none;
     margin: 10px;
   }
@@ -173,7 +175,7 @@ ol .required {
   }
 
   /* balise commenter dans formulair */
-  .inputFormuer ol li textarea {
+  .inputFormulair ol li textarea {
     padding: 5px;
     border: solid 1px #c4c4c4;
     box-shadow: inset 0 1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
@@ -189,7 +191,7 @@ ol .required {
     border-radius: 5px;
     padding: 10px;
     width: 630px;
-    max-width: 628px;
+    max-width: 622px;
     font-family: "Montserrat", sans-serif;
     color: aliceblue;
     background-color: #4a534c;
@@ -201,8 +203,98 @@ ol .required {
 }
 
 /* version téléphon */
-@media screen and (max-width: 380px) {
-  body {
-    background-color: red;
+@media screen and (max-width: 414px) {
+  /* div principale de formuler */
+  .formuler {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  /* balis formuler */
+  .formuler form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* div pour titr et saus titre */
+  .titre {
+    width: 90%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: aliceblue;
+  }
+  /* balis input qui contier les list et dans list on a les labels et inputes */
+  .formuler .inputFormulair {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: aliceblue;
+  }
+
+  .formuler .inputFormulair ol {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* balis input qui contier les list et dans list on a les labels et inputes */
+  .formuler .inputFormulair {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: aliceblue;
+  }
+
+  /* input style formulair */
+  .inputFormulair ol li input {
+    border: solid 1px #dbdbdb;
+    width: 313px;
+    max-width: 313px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
+      0.1em 0.1em 1em #cacaca4d;
+  }
+
+  /* balis li pour formuler */
+  .inputFormulair li {
+    list-style: none;
+  }
+
+  /* balise commenter dans formulair */
+  .inputFormulair ol li textarea {
+    /* padding: 10px; */
+    border: solid 1px #c4c4c4;
+    box-shadow: inset 0 1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
+      0.1em 0.1em 1em #cacaca4d;
+    width: 313px;
+    max-width: 313px;
+  }
+
+  .button {
+    width: 322px;
+    max-width: 322px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 3px;
+    /* margin-top: 10px;
+    border: solid 1px #707070;
+    border-radius: 5px;
+    padding: 10px;
+    width: 330px;
+    max-width: 330px; */
+    font-family: "Montserrat", sans-serif;
+    color: aliceblue;
+    background-color: #4a534c;
   }
 }
