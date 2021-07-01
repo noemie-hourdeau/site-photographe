@@ -149,6 +149,8 @@ pile dans la box */
   border-top: 2px solid white;
   border-bottom: 2px solid white; 
 }
+
+/*------------------------------------------------------ rouhullah */
 /* -------------------------------------------- font dans formulair */
 /* style font pour premier titre dans formuler */
 .titre h1 {
@@ -162,7 +164,7 @@ pile dans la box */
 }
 
 /* style font pour label dans formuler */
-.inputFormuer ol li label {
+.inputFormulair ol li label {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -185,7 +187,7 @@ pile dans la box */
 
 /* div pour titr et saus titre */
 .titre {
-  width: 40%;
+  width: 56%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -194,30 +196,37 @@ pile dans la box */
 }
 
 /* balis input qui contier les list et dans list on a les labels et inputes */
-.formuler .inputFormuer {
+.formuler .inputFormulair {
   margin-top: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 75%;
+  width: 90%;
   color: aliceblue;
 }
+
+/* taille liste dans formulair */
+.formuler .inputFormulair ol {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 /* input style formulair */
-.inputFormuer ol li input {
+.inputFormulair ol li input {
   border: solid 1px #dbdbdb;
   padding: 5px;
-  width: 730px;
-  max-width: 730px;
+  width: 90%;
+  max-width: 90%;
   border-radius: 3px;
   box-shadow: inset 0 -1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
     0.1em 0.1em 1em #cacaca4d;
 }
 
 /* balis li pour formuler */
-.inputFormuer li {
+.inputFormulair li {
   list-style: none;
-  margin: 10px;
+  margin-top: 10px;
 }
 
 /* etoil dans label qui est dans formulair */
@@ -226,12 +235,12 @@ ol .required {
 }
 
 /* balise commenter dans formulair */
-.inputFormuer ol li textarea {
+.inputFormulair ol li textarea {
   padding: 5px;
   border: solid 1px #c4c4c4;
   box-shadow: inset 0 1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
     0.1em 0.1em 1em #cacaca4d;
-  width: 730px;
+  width: 90%;
 }
 
 /* style button qui est dans formulair */
@@ -240,8 +249,9 @@ ol .required {
   border: solid 1px #707070;
   border-radius: 5px;
   padding: 10px;
-  width: 746px;
-  max-width: 746px;
+  width: 95%;
+  max-width: 92%;
+  margin-right: -1%;
   font-family: "Montserrat", sans-serif;
   color: aliceblue;
   background-color: #4a534c;
@@ -251,8 +261,9 @@ ol .required {
   color: #8f8f8f;
 }
 
+/* ----------------------------------------rouhullah */
 /* version iPad */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 414px) {
   /* div principale de formuler */
   .formuler {
     width: 100%;
@@ -271,7 +282,7 @@ ol .required {
 
   /* div pour titr et saus titre */
   .titre {
-    width: 60%;
+    width: 80%;
     padding-top: 15px;
     display: flex;
     flex-direction: column;
@@ -281,20 +292,27 @@ ol .required {
   }
 
   /* balis input qui contier les list et dans list on a les labels et inputes */
-  .formuler .inputFormuer {
+  .formuler .inputFormulair {
     margin-top: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 95%;
     color: aliceblue;
   }
+
+  /* taille liste dans formulair */
+  .formuler .inputFormulair ol {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
   /* input style formulair */
-  .inputFormuer ol li input {
+  .inputFormulair ol li input {
     border: solid 1px #dbdbdb;
-    width: 613px;
-    max-width: 613px;
+    width: 95%;
+    max-width: 95%;
     padding: 5px;
     border-radius: 3px;
     box-shadow: inset 0 -1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
@@ -302,7 +320,7 @@ ol .required {
   }
 
   /* balis li pour formuler */
-  .inputFormuer li {
+  .inputFormulair li {
     list-style: none;
   }
 
@@ -312,13 +330,13 @@ ol .required {
   }
 
   /* balise commenter dans formulair */
-  .inputFormuer ol li textarea {
+  .inputFormulair ol li textarea {
     padding: 5px;
     border: solid 1px #c4c4c4;
     box-shadow: inset 0 1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
       0.1em 0.1em 1em #cacaca4d;
-    width: 613px;
-    max-width: 613px;
+    width: 95%;
+    max-width: 95%;
   }
 
   /* style button qui est dans formulair */
@@ -327,8 +345,8 @@ ol .required {
     border: solid 1px #707070;
     border-radius: 5px;
     padding: 10px;
-    width: 630px;
-    max-width: 628px;
+    width: 100%;
+    max-width: 97%;
     font-family: "Montserrat", sans-serif;
     color: aliceblue;
     background-color: #4a534c;
@@ -344,6 +362,97 @@ ol .required {
 .inputFormuer ol li textarea,
 {
   width: 100%;
+=======
+/* version téléphon */
+@media screen and (max-width: 413px) {
+  /* div principale de formuler */
+  .formuler {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  /* balis formuler */
+  .formuler form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* div pour titr et saus titre */
+  .titre {
+    width: 90%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: aliceblue;
+  }
+  /* balis input qui contier les list et dans list on a les labels et inputes */
+  .formuler .inputFormulair {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: aliceblue;
+  }
+
+  /* input style formulair */
+  .inputFormulair ol li input {
+    border: solid 1px #dbdbdb;
+    width: 95%;
+    max-width: 95%;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
+      0.1em 0.1em 1em #cacaca4d;
+  }
+
+  .formuler .inputFormulair ol {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* balis input qui contier les list et dans list on a les labels et inputes */
+  .formuler .inputFormulair {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: aliceblue;
+  }
+
+  /* balis li pour formuler */
+  .inputFormulair li {
+    list-style: none;
+  }
+
+  /* balise commenter dans formulair */
+  .inputFormulair ol li textarea {
+    padding: 5px;
+    border: solid 1px #c4c4c4;
+    box-shadow: inset 0 1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
+      0.1em 0.1em 1em #cacaca4d;
+    width: 95%;
+    max-width: 95%;
+  }
+
+  /* style button qui est dans formulair */
+
+  .button {
+    border: solid 1px #707070;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    max-width: 97%;
+    font-family: "Montserrat", sans-serif;
+    color: aliceblue;
+    background-color: #4a534c;
+  }
 }
 ol {
   padding: 0;
