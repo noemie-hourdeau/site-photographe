@@ -349,35 +349,3 @@ ol {
   padding: 0;
 }
 
-/* version téléphon */
-@media screen and (max-width: 1000px) {
-  /* div principale de formuler */
-  .formuler .inputFormuer,
-  .inputFormuer ol li input,
-  .inputFormuer ol li textarea,
-  .button {
-    width: 95%;
-  }
-  ol {
-    padding: 0;
-  }
-  .cadre {
-    width: 100%;
-    height: 250px;
-  } 
-}
-
-@media screen and (min-width: 1000px) {
-  .categories {
-    flex-direction: row;
-  }
-  .architecture {
-    background: none;
-    border: none;
-  }
-  .formuler {
-    background : #333333;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white; 
-  }
-}
