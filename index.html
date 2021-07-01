@@ -1,19 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0eee9d9c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <style>
-        <!--Font H1-->
-        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-        <!--Font Paragraphes-->
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-        </style>
+    <link rel="icon" href="img/icons/camera.png">
+    <title>Jean Jacques Photos</title>
 </head>
 <body>
+
    
 </body>
+</html>
+
+    <header>
+        <nav>
+            <h1>Jean Jacques Photo</h1>
+            <img src="img/icons/menu.svg">
+        </nav>
+        <p class="citation">
+          <i class="fas fa-quote-left"></i> Ceci est une citation <i class="fas fa-quote-right"></i>
+        </p>
+    </header>
+    <main>
+        <div class="slider">
+            <!-- Les radios sont regroupés et ont le même nom pour 
+                qu'il ne puisse y en avoir qu'un seul de check -->
+            <input type="radio" name="images" id="i1" checked>
+            <input type="radio" name="images" id="i2">
+            <input type="radio" name="images" id="i3">
+    
+            <div class="cadre">
+              <div class="container">
+              <div class="slideimg" id="img1">
+                  <img src="img/slider/wolf.jpeg" alt="photo de loup">
+              <!-- labels qui vont check le radio adéquat 
+                  (img precedente / img suivante) 
+              chaque image a ses propres labels adaptés-->
+                  <label for="i3" class="pre"><img src="img/icons/arrowleft.png" alt=""></label>
+                  <label for="i2" class="nxt"><img src="img/icons/arrowright.png" alt=""></label>
+              </div>
+              <div class="slideimg" id="img2">
+                  <img src="img/slider/snow.jpeg" alt="photo de montagnes">
+              
+                  <label for="i1" class="pre"><img src="img/icons/arrowleft.png" alt=""></label>
+                  <label for="i3" class="nxt"><img src="img/icons/arrowright.png" alt=""></label>
+              </div>
+              <div class="slideimg" id="img3">
+                  <img src="img/slider/buildings.jpeg" alt="photo de gratte ciels">
+              
+                  <label for="i2" class="pre"><img src="img/icons/arrowleft.png" alt=""></label>
+                  <label for="i1" class="nxt"><img src="img/icons/arrowright.png" alt=""></label>
+              </div>
+          </div>
+        </div>
+        <p class="presentation">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus non, consequatur ex laboriosam dolorem nihil maxime labore assumenda! Non minima hic soluta quo, et accusantium?
+        </p>
+        <section class="presta">
+            <h2>Prestations</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo perferendis asperiores earum suscipit iure aut nulla, alias cupiditate ducimus iste autem, molestiae consectetur neque.</p>
+        </section>
+        <div class="categories">
+            <section class="animaux">
+                <h2>FAUNE & FLORE</h2>
+                <img src="img/cat1-animaux/horse.jpeg" alt="photo de cheval">
+            </section>
+            <section class="architecture">
+                <h2>ARCHITECTURE</h2>
+                <img src="img/cat2-architecture/skyscraper.jpeg" alt="">
+            </section>
+            <section class="paysages">
+                <h2>PAYSAGES</h2>
+                <img src="img/cat3-paysage/iguazu.jpeg" alt="">
+            </section>
+        </div>
+    <!-- formuler avec un titre et saus titre avec 4 input pour information et 1 pour commenter -->
+    <div class="formuler">
+      <!-- cette balise contien touts les balis pour notre formuler -->
+      <form action="">
+        <!-- cette balis contien titre et saus titre -->
+        <div class="titre">
+          <h1>CONTACT</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error
+          </p>
+        </div>
+
+        <!-- cette balis contier les liste (labels et input) -->
+        <div class="inputFormulair">
+          <ol>
+            <li>
+              <!-- label input nom -->
+              <label for="Nom">NOM <span class="required">*</span></label>
+              <br />
+              <input type="text" placeholder="Nom" />
+            </li>
+            <li>
+              <!-- label input téléphont -->
+              <label for="TEL">TEL <span class="required">*</span></label
+              ><br />
+              <input type="text" placeholder="0111111111" />
+            </li>
+            <li>
+              <!-- label input email -->
+              <label for="Eamil">E-mail <span class="required">*</span></label>
+              <br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="contact@gmail.com"
+              />
+            </li>
+            <li>
+              <!-- balise commenter -->
+              <label for="sujet">Sujet <span class="required">*</span></label>
+              <br />
+              <textarea
+                name="commenter"
+                id="commenter"
+                rows="6"
+                placeholder="Entrez votre commentaire..."
+              ></textarea>
+            </li>
+            <li>
+              <!-- button envoyer -->
+              <button class="button">ENVOYER</button>
+            </li>
+          </ol>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
