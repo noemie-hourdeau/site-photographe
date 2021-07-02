@@ -534,11 +534,10 @@ footer .separataurReseauxSocieaux {
   .formuler {
     background: #333333;
     border-top: 2px solid white;
-<<<<<<< HEAD
+
     border-bottom: 2px solid white;
-=======
-    border-bottom: 2px solid white; 
->>>>>>> d2b8f7387825fb615ca2b7aaea914f4d358b5d26
+
+    border-bottom: 2px solid white;
   }
 }
 
@@ -548,7 +547,3 @@ footer .separataurReseauxSocieaux {
     height: 50%;
   }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> d2b8f7387825fb615ca2b7aaea914f4d358b5d26
