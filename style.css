@@ -12,7 +12,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 30px;
+  height: 20px;
   padding: 10px;
   background: #333333;
   border-bottom: 2px solid white;
@@ -40,12 +40,11 @@ nav a {
   display: none;
   text-decoration: none;
   color: white;
-  font-size: 1.2em;
 }
 
 .citation {
   margin: 20px auto;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   color: white;
@@ -61,7 +60,8 @@ main {
 .wrapper {
   display: flex;
   justify-content: center;
-  margin: auto;
+  align-items: center;
+  margin: 30px auto;
   width: 80%;
   gap: 40px;
 }
@@ -113,19 +113,20 @@ img { display: block; }
 
 .slideimg label {
   background: rgba(185, 185, 185, 0.5);
+  border-radius: 50%;
 }
 
 .pre {
  z-index: 2;
  position: absolute;
- top: 0;
+ top: 40%;
  left: 0;
  transform: scale(0.6);
 }
 .nxt {
  z-index: 2;
  position: absolute;
- top: 0;
+ top: 40%;
  right: 0;
  transform: scale(0.6);
 }
@@ -575,6 +576,13 @@ footer .separataurReseauxSocieaux {
   .slider {
     width: 100%;
     height: 50%;
+  }
+  .wrapper {
+    display: block;
+  }
+  .presentation {
+    width: 80%;
+    margin: 40px auto;
   }
 }
 
