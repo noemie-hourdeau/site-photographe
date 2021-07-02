@@ -472,7 +472,7 @@ ol {
 /* footer style */
 /* contier de mon footer */
 footer {
-  background-color: aqua;
+  background-color: #333333;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -480,8 +480,9 @@ footer {
 }
 /* continer de mon reseaux socieux */
 .continerReseauxsociaux {
-  background-color: bisque;
   display: flex;
+  justify-content: space-around;
+  width: 15%;
 }
 footer .continerReseauxsociaux img {
   width: 20px;
@@ -490,18 +491,28 @@ footer .continerReseauxsociaux img {
 footer .separataurReseauxSocieaux {
   display: flex;
   width: 75%;
-  border: solid 1px black;
+  border: solid 0.5px rgb(255, 255, 255);
 }
 /* continer de montion égal */
 .continerMontionEgal {
-  background-color: rgb(89, 89, 119);
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 16%;
 }
 
 .continerMontionEgal div a {
   font-size: x-small;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.continerMontionEgal div {
+  margin-top: 3%;
+}
+
+.continerMontionEgal hr {
+  height: 20px;
 }
 
 /* continer de lisanc */
@@ -510,7 +521,7 @@ footer .separataurReseauxSocieaux {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: cadetblue;
+  margin-bottom: 2%;
 }
 /* image dans footer/continer lisanc */
 .continerLisanc img {
@@ -521,6 +532,7 @@ footer .separataurReseauxSocieaux {
 .continerLisanc p {
   font-size: xx-small;
   display: flex;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 1000px) {
@@ -539,7 +551,7 @@ footer .separataurReseauxSocieaux {
 
     border-bottom: 2px solid white;
   }
-  .menu  {
+  .menu {
     display: none;
   }
 }
