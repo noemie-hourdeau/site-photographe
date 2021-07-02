@@ -540,6 +540,9 @@ footer .separataurReseauxSocieaux {
     border-bottom: 2px solid white; 
 >>>>>>> d2b8f7387825fb615ca2b7aaea914f4d358b5d26
   }
+  .menu  {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 900px) {
