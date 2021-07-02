@@ -119,11 +119,19 @@ img { display: block; }
  transform: translate(-66.666666666666%);
 }
 
+/* Paragraphe de Présentation*/
 .presentation {
   margin: 30px auto;
   padding: 20px 40px;
   background: #333333;
 }
+
+/* Prestations / Etapes pour commande*/
+#titreprestations {
+  text-align: center;
+  font-weight: bold;
+}
+
 
 .presta {
   margin: 120px auto 0px;
@@ -133,6 +141,35 @@ img { display: block; }
   border-bottom: 2px solid white;
 }
 
+.prestations {
+  list-style-type: none;
+  counter-reset: item;
+  font-size: 150%;
+}
+
+.etape {
+  counter-increment: item;
+}
+
+.etape:before {
+  display: inline-block;
+  content: counter(item);
+  background: lightblue;
+  border-radius: 100%;
+  color: white;
+  width: 1.2em;
+  text-align: center;
+  margin-right: 2%;
+  padding: 1%;
+  background-color: white;
+  color: #333333;
+}
+
+#details {
+  margin-left: 6%;
+}
+
+/* Catégories */
 .categories {
   width: 100%;
   display: flex;
