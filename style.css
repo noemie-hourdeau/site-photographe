@@ -4,6 +4,7 @@ body {
   height: auto;
   background-image: url("img/background/towel.png");
   background-size: 100%;
+  background-attachment: fixed;
 }
 /* barre de navigation en flex
 contient h1 et menu burger */
@@ -11,25 +12,40 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 40px;
+  height: 30px;
   padding: 10px;
   background: #333333;
   border-bottom: 2px solid white;
 }
 /* "Jean Jacques */
+nav h1{
+  font-family: 'Abril Fatface', cursive;
 nav h1 {
   font-family: "Abril Fatface", cursive;
   font-weight: normal;
   color: white;
+  white-space: nowrap;
 }
+
+.navmenu {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* menu burger */
 nav img {
   height: 50%;
   color: white;
 }
 
+nav a {
+  display: none;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+
 .citation {
-  margin: 40px auto;
+  margin: 20px auto;
   font-size: 1.5em;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
@@ -37,28 +53,39 @@ nav img {
   text-align: center;
 }
 
-/* set la font pour le main de la page */
 main {
   font-family: "Montserrat", sans-serif;
   color: white;
   width: 100%;
 }
 
-.slider {
-  width: 900px;
-  height: 60vh;
+.wrapper {
+  display: flex;
+  justify-content: center;
   margin: auto;
+  width: 80%;
+  gap: 40px;
+}
+
+.slider {
+  aspect-ratio: 16 / 9;
+  width: 70%;
+  box-shadow: 5px 5px 5px rgb(36, 36, 36);
+  align-self: center;
+  background: black;
 }
 
 .slider input {
   display: none;
 }
 .cadre {
-  width: 75%;
-  height: 100%;
-  overflow: hidden;
-  border: 2px solid black;
-  margin: auto;
+ overflow: hidden;
+ border: 2px solid black;
+ width: 75%;
+ height: 100%;
+ overflow: hidden;
+ border: 2px solid black;
+ margin: auto;
 }
 
 .container {
@@ -123,9 +150,15 @@ img {
 
 /* Paragraphe de Présentation*/
 .presentation {
-  margin: 30px auto;
-  padding: 20px 40px;
-  background: #333333;
+  width: 30%;
+  margin: 0;
+  text-align: justify;
+  /* background: #33333327;
+    padding: 20px;
+    border: 1px solid white;
+    backdrop-filter: blur(2px);
+    box-shadow: 5px 5px 10px rgb(36, 36, 36); */
+  line-height: 150%;
 }
 
 /* Prestations / Etapes pour commande*/
@@ -137,7 +170,6 @@ img {
 
 .presta {
   margin: 120px auto 0px;
-  padding: 20px 40px;
   background: #333333;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
@@ -590,6 +622,12 @@ footer .separataurReseauxSocieaux {
   }
   .menu {
     display: none;
+  }
+  nav {
+    justify-content: space-evenly;
+  }
+  nav a {
+    display: inline;
   }
 }
 
