@@ -111,7 +111,7 @@ img {
 .slideimg p {
   position: absolute;
   bottom: 0;
-  background: red;
+  background: rgb(151, 147, 147);
 }
 
 .slideimg img {
