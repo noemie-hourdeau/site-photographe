@@ -42,13 +42,13 @@ nav a {
 }
 
 .citation {
-  margin: 10px auto;
+  margin: 0 auto 10px;
   font-size: 1.2em;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   color: white;
   text-align: center;
-  backdrop-filter: blur(40px);
+  background: #000000;
   padding: 20px;
 }
 
@@ -104,11 +104,11 @@ img {
   width: 100%;
 }
 
-.slideimg p {
+/* .slideimg p {
   position: absolute;
   bottom: 0;
   background: red;
-}
+} */
 
 .slideimg img {
   width: 100%;
@@ -158,8 +158,8 @@ img {
     
     box-shadow: 5px 5px 10px rgb(36, 36, 36); */
   line-height: 150%;
-  backdrop-filter: blur(40px);
-  padding: 20px;
+  background: #000000;
+  padding: 10px;
 }
 
 /* Prestations / Etapes pour commande*/
@@ -648,5 +648,22 @@ footer .separataurReseauxSocieaux {
   .presentation {
     width: 80%;
     margin: 40px auto;
+  }
+  .pre, .nxt {
+    transform: scale(0.4);
+    top: 35%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pre, .nxt {
+    transform: scale(0.3);
+    top: 20%;
+  }
+  .pre {
+    left: -10%;
+  }
+  .nxt {
+    right: -10%;
   }
 }
