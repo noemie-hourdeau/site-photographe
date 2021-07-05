@@ -6,6 +6,11 @@ body {
   background-size: 100%;
   background-attachment: fixed;
 }
+
+a {
+  color: white;
+}
+
 /* barre de navigation en flex
 contient h1 et menu burger */
 nav {
