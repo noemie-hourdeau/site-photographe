@@ -67,7 +67,7 @@ main {
   width: 100%;
 }
 
-.wrapper {
+.carouselExampleDark {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +76,7 @@ main {
   gap: 40px;
 }
 
-.slider {
+.carousel-item {
   aspect-ratio: 16 / 9;
   width: 75%;
   box-shadow: 5px 5px 5px rgb(36, 36, 36);
@@ -104,7 +104,7 @@ main {
   transition-timing-function: ease-in-out;
 }
 
-img {
+.img {
   display: block;
 }
 
@@ -126,7 +126,7 @@ img {
   z-index: 1;
 }
 
-.slideimg label {
+.slideimg button {
   background: rgba(185, 185, 185, 0.5);
   border-radius: 50%;
 }
