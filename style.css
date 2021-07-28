@@ -201,9 +201,9 @@ main {
   border-radius: 100%;
   color: white;
   width: 1.2em;
-  text-align: center;
+  
   margin-right: 2%;
-  padding: 1%;
+  padding: 2%;
   background-color: white;
   color: #333333;
 }
@@ -216,7 +216,18 @@ main {
 #moredetails {
   text-decoration: none;
   color: white;
+  position: relative; 
+
 }
+
+/* Actualités button
+
+#buttonaccord {
+color: white;
+border-color: white;
+
+} */
+
 
 /* Catégories */
 .categories {
@@ -701,9 +712,9 @@ ol {
     top: 20%;
   }
   .pre {
-    left: -10%;
+    left: -20%;
   }
   .nxt {
-    right: -10%;
+    right: -20%;
   }
 }
