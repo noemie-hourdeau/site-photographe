@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0eee9d9c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="pagecontact.css">
+    <link rel="icon" href="img/icons/camera.png">
+    
+    <title>Code de la page contact</title>
+</head>
+<body>
+    
+<!-- formulaire avec un titre et sous-titre avec 4 input pour information et 1 pour commentaire -->
+<div class="formuler">
+    <!-- cette balise contient toutes les balises pour notre formulaire -->
+    <form action="">
+      <!-- cette balise contient titre et sous titre -->
+      <div class="titre">
+        <h1>CONTACT</h1>
+        
+      </div>
+
+      <!-- cette balis contier les liste (labels et input) -->
+      <div class="inputFormulair" id='tg2'>
+        <ol>
+          <li>
+            <input type="text" placeholder="nom" />
+          </li>
+          <li>
+            <input type="text" placeholder="0700000000" />
+          </li>
+          <li>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="contact@gmail.com"
+            />
+          </li>
+          <li>
+            <textarea
+              name="commenter"
+              id="commenter"
+              rows="6"
+              placeholder="Vous avez déjà une idée précise de votre print ? Envoyez moi les détails ici !
+Vous avez besoin de conseils ? Je suis là pour ça, posez-moi votre question ici!"
+            ></textarea>
+          </li>
+          <li>
+            <p>
+              Données déclarées à la CNIL. Conformément aux articles 38 et 40 de la loi du 6 janvier 1978,
+              vous disposez d’un droit d’accès, de modification, de rectification et de suppression des données vous concernant. 
+
+             Vos données sont protégées et réservées à l'usage de Mamzelle Bulle Studio Paris.
+            </p>
+          </li>
+          
+          <li>
+            <!-- button envoyer -->
+            <button id="tri" type="submit" class="button">ENVOYER</button>
+          </li>
+        </ol>
+        
+      </div>
+      <p id="d1"></p>
+    </form>
+  </div>
+
+
+  <script src="pagecontact.js"></script>
+
+</body>
+</html>

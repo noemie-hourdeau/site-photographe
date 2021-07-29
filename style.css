@@ -715,8 +715,11 @@ ol {
   display: block;
 }
 
-.disappear
+#d1
 {
-  display: none;
+  text-align: center;
+  
 }
+
+
 
