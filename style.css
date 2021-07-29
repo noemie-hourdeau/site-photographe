@@ -228,6 +228,33 @@ border-color: white;
 
 } */
 
+#flore  {
+border-radius: 10px;
+  height: 225px;
+}
+
+#faune {
+  border-radius: 10px;
+}
+
+#floreblue {
+  border-radius: 10px;
+}
+
+#inde {
+  border-radius: 10px;
+
+}
+
+#pont {
+  border-radius: 10px;
+
+}
+
+#rome {
+  border-radius: 10px;
+
+}
 
 /* Catégories */
 .categories {
