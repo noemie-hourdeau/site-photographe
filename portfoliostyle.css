@@ -95,3 +95,32 @@ footer {
     display: flex;
     color: #ffffff;
   }
+
+@media screen and (max-width: 500px) {
+  .pre, .nxt {
+    transform: scale(0.3);
+    top: 20%;
+  }
+  .pre {
+    left: -10%;
+  }
+  .nxt {
+    right: -10%;
+  }
+}
+
+
+
+.appear
+{
+  display: block;
+}
+
+#d1
+{
+  text-align: center;
+  
+}
+
+
+
