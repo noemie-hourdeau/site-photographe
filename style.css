@@ -707,3 +707,16 @@ ol {
     right: -10%;
   }
 }
+
+
+
+.appear
+{
+  display: block;
+}
+
+.disappear
+{
+  display: none;
+}
+
