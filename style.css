@@ -67,7 +67,7 @@ main {
   width: 100%;
 }
 
-.wrapper {
+.carouselExampleDark {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +76,7 @@ main {
   gap: 40px;
 }
 
-.slider {
+.carousel-item {
   aspect-ratio: 16 / 9;
   width: 75%;
   box-shadow: 5px 5px 5px rgb(36, 36, 36);
@@ -104,7 +104,7 @@ main {
   transition-timing-function: ease-in-out;
 }
 
-img {
+.img {
   display: block;
 }
 
@@ -126,7 +126,7 @@ img {
   z-index: 1;
 }
 
-.slideimg label {
+.slideimg button {
   background: rgba(185, 185, 185, 0.5);
   border-radius: 50%;
 }
@@ -201,9 +201,9 @@ img {
   border-radius: 100%;
   color: white;
   width: 1.2em;
-  text-align: center;
+  
   margin-right: 2%;
-  padding: 1%;
+  padding: 2%;
   background-color: white;
   color: #333333;
 }
@@ -216,6 +216,44 @@ img {
 #moredetails {
   text-decoration: none;
   color: white;
+  position: relative; 
+
+}
+
+/* Actualités button
+
+#buttonaccord {
+color: white;
+border-color: white;
+
+} */
+
+#flore  {
+border-radius: 10px;
+  height: 225px;
+}
+
+#faune {
+  border-radius: 10px;
+}
+
+#floreblue {
+  border-radius: 10px;
+}
+
+#inde {
+  border-radius: 10px;
+
+}
+
+#pont {
+  border-radius: 10px;
+
+}
+
+#rome {
+  border-radius: 10px;
+
 }
 
 /* Catégories */
@@ -701,9 +739,9 @@ ol {
     top: 20%;
   }
   .pre {
-    left: -10%;
+    left: -20%;
   }
   .nxt {
-    right: -10%;
+    right: -20%;
   }
 }

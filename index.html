@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d0eee9d9c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/icons/camera.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <title>Jean Jacques Photos</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
           <div class="tiltebox">
             <h1>Jean Jacques Photos</h1>
           </div>
-            <a class="navmenu" href="#">Accueil</a>
+            <a class="navmenu" href="#">Actualités</a>
             <a class="navmenu" href="#">Portfolio</a>
             <a class="navmenu" href="#">Prestations</a>
             <a class="navmenu" href="#">Contact</a>
@@ -30,64 +31,217 @@
         </p>
     </header>
     <main>
-      <div class="wrapper">
-        <div class="slider">
-            <!-- Les radios sont regroupés et ont le même nom pour 
-                qu'il ne puisse y en avoir qu'un seul de check -->
-            <input type="radio" name="images" id="i1" checked>
-            <input type="radio" name="images" id="i2">
-            <input type="radio" name="images" id="i3">
-    
-            <div class="cadre">
-              <div class="container">
-              <div class="slideimg" id="img1">
-                <p>© 2017 - Loup gris</p>
-                  <img src="img/slider/wolf.jpeg" alt="photo de loup">
-              <!-- labels qui vont check le radio adéquat 
-                  (img precedente / img suivante) 
-              chaque image a ses propres labels adaptés-->
-                  <label for="i3" class="pre"><img src="img/icons/arrowleft.png" alt=""></label>
-                  <label for="i2" class="nxt"><img src="img/icons/arrowright.png" alt=""></label>
-              </div>
-              <div class="slideimg" id="img2">
-                <p>© 2015 - Les Alpes</p>
-                  <img src="img/slider/snow.jpeg" alt="photo de montagnes">
+     
+    <div class="container" 
+            <div id="carouselExampleDark" class="carousel carousel-dark slide row justify-content-md-center" data-bs-ride="carousel">
               
-                  <label for="i1" class="pre"><img src="img/icons/arrowleft.png" alt=""></label>
-                  <label for="i3" class="nxt"><img src="img/icons/arrowright.png" alt=""></label>
+              <div class="carousel-inner">
+                <div class="row"></div> 
+
+                <div class="carousel-item active slideimg " data-bs-interval="10000">
+                  <img src="img/slider/wolf.jpeg" class="col-md-3 w-100" alt="photo de loup">
+                  <div class="carousel-caption d-none d-md-block position-center">
+                    <h5>2014</h5>
+                  </div>
+                </div>
+                <div class="carousel-item slideimg " data-bs-interval="2000">
+                  <img src="img/slider/snow.jpeg" class="col-md-3 w-100" alt="photo à la montagne">
+                  <div class="carousel-caption d-none d-md-block position-center">
+                    <h5>2016</h5>
+                  </div>
+                </div>
+                <div class="carousel-item slideimg ">
+                  <img src="img/slider/buildings.jpeg" class="col-md-3 w-100" alt="photo architecture">
+                  <div class="carousel-caption d-none d-md-block position-center">
+                    <h5>2020</h5>
+                  </div>
+                </div>
               </div>
-              <div class="slideimg" id="img3">
-                <p>© 2013 - Chutes d'Iguazu</p>
-                  <img src="img/slider/buildings.jpeg" alt="photo de gratte ciels">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
               
-                  <label for="i2" class="pre"><img src="img/icons/arrowleft.png" alt=""></label>
-                  <label for="i1" class="nxt"><img src="img/icons/arrowright.png" alt=""></label>
-              </div>
-              </div>
-          </div>
-        </div>
+            </div>
+
+            
+
         <!--Paragraphe de présentation-->
-        <p class="presentation">
-          <strong>Photographe passionné</strong> depuis toujours, je suis d'une <strong>bonne humeur sans faille</strong>, j'apporte mon <strong>énergie</strong> et ma <strong>créativité</strong> à mes <strong>photos</strong> comme des <strong>oeuvres d’art</strong>, des histoires que je raconte.
-Je suis basé en <strong>Haute-Savoie</strong>, où mon <strong>amour pour le plein air</strong> et la <strong>lumière riche</strong> m'a appris à me connecter au mieux avec mon élément. Je sillonne les routes du <strong>monde entier</strong> là où <strong>l’inspiration</strong> me porte.
+      
+        <p class="col-md-3  p-5 fw-bold ">
+          Photographe passionné depuis toujours, je suis d'une bonne humeur sans faille, j'apporte mon énergie et ma créativité à mes photos comme des oeuvres d’art, des histoires que je raconte.
+Je suis basé en Haute-Savoie, où mon amour pour le plein air et la lumière riche m'a appris à me connecter au mieux avec mon élément. Je sillonne les routes du monde entier là où l’inspiration me porte.
         </p>
-      </div>
+     
+      </div>  
 
         <!--Prestations-->
         <section class="presta">
-            <h2 id="titreprestations">OFFREZ-VOUS UNE <strong>PHOTO ORIGINALE</strong> EN 4 ETAPES !</h2>
-            <ul class="prestations">
-              <li class="etape">Choisissez votre <strong>photo originale</strong> dans mon <strong>portfolio</strong></li>
+          <div class=" container-fluid  " 
+            <h2 class="lg"  id="titreprestations">OFFREZ-VOUS UNE PHOTO ORIGINALE EN 4 ETAPES !</h2>
+            <ol class="prestations">
+              <li class="etape fw-bold">Choisissez votre photo originale dans mon portfolio</li>
               <br>
-              <li class="etape">Choisissez votre <strong>support d’impression</strong></li>
+              <li class="etape fw-bold">Choisissez votre support d’impression</li>
               <br>
-              <li class="etape">Choisissez votre <strong>format d’impression</strong></li>
+              <li class="etape fw-bold">Choisissez votre format d’impression</li>
               <br>
-              <li class="etape">Choisissez votre <strong>finition</strong></li>
+              <li class="etape fw-bold">Choisissez votre finition</li>
               <br>
-              <li id="details"><a id="moredetails" href="#">Plus de détails ici</a></li>
-            </ul>
+            <div>      
+              <li id="details"><a id="moredetails" href="#"  >Plus de détails ici</a></li>
+          </ol>
+        </div>
+
+<!-- Actualités -->
+
+<div class="container row justify-content-md-center m-auto accordion  "  id="accordionExample"  > 
+
+ 
+
+ <div class="card mb-3 col-md-4 bg-dark accordion-item">
+  <img src="img/Actualités/flore red.jpg" class="card-img-top " alt="..." id="flore"> 
+  <div class="card-body">
+    <h5 class="card-title">28 juin 2021</h5>
+    <p class="card-text">Chaenomeles</p>
+   
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         
+      </button>
+    </h2>
+
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Chaenomeles est un genre de plantes de la famille des Rosacées, toutes originaires d'Asie Orientale. Dans la sous-famille des Maloideae, le genre Chaenomeles est étroitement apparenté aux genres des cognassiers, des Docynia, des pommiers et des poiriers.   
+         </div>
+    </div>
+    
+    
+  </div>
+  </div>
+
+  
+
+ <div class="card mb-3 col-md-4 bg-dark accordion-item">
+  <img src="img/Actualités/faune piou.jpg" class="card-img-top" id="faune" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">23 juin 2021</h5>
+    <p class="card-text">Un colibri et son repas </p>
+
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        
+      </button>
+    </h2>
+
+
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Colibri est un nom général du vocabulaire français qui ne correspond pas exactement à un niveau de classification scientifique des oiseaux-mouches.
+        C'est-à-dire qu'il s'agit d'un nom vernaculaire dont le sens est ambigu en biologie car utilisé seulement pour désigner une partie des différentes espèces d'oiseaux classées dans la famille des Trochilidés.     
+        </div>
+    </div>
+  </div>
+ </div>  
+
+
+ <div class="card mb-3 col-md-4 bg-dark accordion-item">
+  <img src="img/Actualités/flore blue.jpg" class="card-img-top" id="floreblue" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">20 juin 2021</h5>
+    <p class="card-text">Nemophila</p>
+
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        
+      </button>
+    </h2>
+
+
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Petite annuelle originaire de Californie, le nemophila s'adapte idéalement dans les jardins frais de bord de mer, sous les climats doux et sur les balcons urbains bien exposés bénéficiant d'un arrosage automatique, car il déteste la sécheresse.
+
+      </div>
+    </div>
+
+  </div>
+ </div>
+
+
+ <div class="card mb-3 col-md-4 bg-dark accordion-item">
+  <img src="img/Actualités/inde.jpg" class="card-img-top" id="inde" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">14 juin 2021</h5>
+    <p class="card-text">Le Taj Mahal</p>
+
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        
+      </button>
+    </h2>
+
+
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Le Taj Mahal est situé à Agra, au bord de la rivière Yamuna, dans l'État de l'Uttar Pradesh, en Inde. C'est un mausolée de marbre blanc construit par l'empereur moghol musulman Shâh Jahân en mémoire de son épouse Arjumand Bânu Begam, aussi connue sous le nom de Mumtaz Mahal, qui signifie en persan « lumière du palais ».       </div>
+    </div>
+
+  </div>
+ </div>
+
+
+ <div class="card mb-3 col-md-4 bg-dark accordion-item">
+  <img src="img/Actualités/pont.jpg" class="card-img-top" id="pont" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">9 juin 2021</h5>
+    <p class="card-text">Le pont de mon enfance </p>
+
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        
+      </button>
+    </h2>
+
+
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Le cœur bat plus vite. À chaque pas. Au-dessus de vous le ciel, au-dessous de vous - la liberté. Vous regardez les sommets des majestueux sapins de la Forêt-Noire. Ressentez cette sensation de picotement. D'abord dans l'estomac, puis dans tout le corps.       </div>
+    </div>
+
+  </div>
+ </div>
+
+
+ <div class="card mb-3 col-md-4 bg-dark accordion-item">
+  <img src="img/Actualités/rome.jpg" class="card-img-top" id=rome alt="...">
+  <div class="card-body">
+    <h5 class="card-title ">5 juin 2021</h5>
+    <p class="card-text">Le collisé </p>
+
+    <h2 class="accordion-header" id="headingSix">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        
+      </button>
+    </h2>
+
+
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Le Colisée, à l'origine amphithéâtre Flavien, est un immense amphithéâtre ovoïde situé dans le centre de la ville de Rome, entre l'Esquilin et le Cælius, le plus grand jamais construit dans l'Empire romain. Il est l'une des plus grandes œuvres de l'architecture et de l'ingénierie romaines.
+      </div>
+    </div>
+
+  </div>
+ </div>
+
+
+</div>  
         <!--Catégories-->    
         </section>
         <div class="categories">
@@ -179,5 +333,10 @@ Vous avez besoin de conseils ? Je suis là pour ça, posez-moi votre question ic
       <!-- div coniner pour date de cration site et lisanc -->
       <div class="continerLisanc"><p>Copyright © 2021 - Jean-Jacques Photographie</p></div>
     </footer>
-  </body>
+ 
+    <script src="https://kit.fontawesome.com/d0eee9d9c2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+ <script src="mamajs.js"></script>
+</body>
 </html>
