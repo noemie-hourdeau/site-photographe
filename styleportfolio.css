@@ -17,10 +17,26 @@ body {
 
   .div_titrePage{
       color: #ffffff;
+      font-size: 1.75rem;
+      font-family: 'Abril Fatface, cursive';
   }
 
   .lead{
     color: #ffffff;
+    font-size: 1.15rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: 'Abril Fatface, cursive';
+  }
+
+  .div_liensAffichage {
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
   }
 
 /** Style Footer **/
@@ -95,32 +111,3 @@ footer {
     display: flex;
     color: #ffffff;
   }
-
-@media screen and (max-width: 500px) {
-  .pre, .nxt {
-    transform: scale(0.3);
-    top: 20%;
-  }
-  .pre {
-    left: -10%;
-  }
-  .nxt {
-    right: -10%;
-  }
-}
-
-
-
-.appear
-{
-  display: block;
-}
-
-#d1
-{
-  text-align: center;
-  
-}
-
-
-
